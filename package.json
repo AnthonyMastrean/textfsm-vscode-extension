@@ -1,0 +1,25 @@
+{
+    "name": "textfsm",
+    "displayName": "TextFSM",
+    "description": "Syntax highlighting for Google's TextFSM templates",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.37.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "textfsm",
+            "aliases": ["TextFSM", "textfsm"],
+            "extensions": [".template"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "textfsm",
+            "scopeName": "source.textfsm",
+            "path": "./syntaxes/textfsm.tmLanguage.json"
+        }]
+    }
+}
